@@ -1,0 +1,18 @@
+@use "../../sass/" as *;
+
+.error {
+  padding: 0;
+  background-color: $back-second;
+  color: $clr-white;
+  &__content {
+    width: 100%;
+    height: calc(100vh - rem(238));
+    @include flex(center, center, 50);
+    flex-direction: column;
+    h1 {
+      font-size: rem(78);
+      margin-bottom: rem(50);
+      letter-spacing: rem(2);
+    }
+  }
+}

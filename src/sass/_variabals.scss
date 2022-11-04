@@ -1,0 +1,33 @@
+@use "./mixin" as *;
+
+$back-btn: linear-gradient(
+  122deg,
+  rgba(255, 204, 27, 1) 0%,
+  rgba(255, 176, 40, 1) 100%
+);
+$back-btn-hover: linear-gradient(
+  122deg,
+  rgb(226, 157, 37) 0% rgb(248, 198, 19) 100%
+);
+$back-global: #25262a;
+$back-second: #2d2e32;
+
+$clr-white: #fff;
+$clr-light: #e2e8e8;
+$clr-blck: #2d2e32;
+$clr-icon: #ffcc1b;
+$clr-green: #5ee4a0;
+
+$border-radius: rem(14);
+$padding-btn: rem(17) rem(46) rem(17) rem(46);
+
+$box-shadow-btn: 0px 10px 15px 0px rgb(255 175 41 / 25%);
+$box-shadow-card: 25px 25px 30px 0px rgb(100 244 171 / 15%);
+$box-shadow-btn: 0px 10px 15px 0px rgb(255 175 41 / 25%);
+$back-img-card: linear-gradient(180deg, #64f4ab 0%, #327a56 100%);
+$back-img-svg: linear-gradient(180deg, #327a56 0%, #64f4ab 100%);
+
+$mobile-width: rem(600);
+$tablet-width: rem(1025);
+
+$font-family: "Dosis", sans-serif;

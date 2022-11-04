@@ -1,0 +1,71 @@
+@use "./sass/" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+html {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: $font-family;
+  font-size: 100%;
+  @include tablet {
+    font-size: 80%;
+  }
+
+  @include mobile {
+    font-size: 60%;
+  }
+}
+
+body {
+  overflow: hidden;
+  overflow-y: auto;
+
+  width: 100wh;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: unset;
+}
+
+button {
+  cursor: pointer;
+}
+button,
+input,
+textarea {
+  outline: 0;
+  border: none;
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  li {
+    cursor: pointer;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.section {
+  width: 100%;
+  height: fit-content;
+  padding: rem(28) rem(156);
+  margin-top: rem(-6);
+}
+
+.container {
+  width: 100%;
+}

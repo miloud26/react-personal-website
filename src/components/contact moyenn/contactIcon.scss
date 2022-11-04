@@ -1,0 +1,57 @@
+@use "../../sass/" as *;
+
+.contact-icon {
+  width: 100%;
+  @include flex(center, space-between, 55);
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
+  transition: 0.8s;
+  margin-bottom: rem(40);
+  &:hover > .icon {
+    background: $back-img-card;
+  }
+
+  &:hover svg path {
+    fill: $clr-white;
+  }
+  svg path {
+    transition: 0.8s;
+  }
+  .icon {
+    transition: 0.8s;
+    width: rem(110);
+    height: rem(110);
+    border-radius: 50%;
+    background-color: $back-global;
+
+    @include flex(center, center, 0);
+  }
+  .content {
+    position: absolute;
+    left: rem(130);
+    h1,
+    p {
+      text-align: left;
+      letter-spacing: rem(2);
+    }
+    h1 {
+      font-size: rem(24);
+      margin-bottom: rem(17);
+    }
+    p {
+      font-size: rem(15);
+      margin-bottom: rem(5.5);
+    }
+  }
+  @include tablet {
+  }
+  @include mobile {
+    width: 100%;
+    margin-top: rem(55);
+    svg {
+      width: rem(35);
+      height: rem(35);
+    }
+  }
+}

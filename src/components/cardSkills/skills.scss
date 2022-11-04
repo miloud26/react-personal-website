@@ -1,0 +1,49 @@
+@use "../../sass/" as *;
+
+.skills {
+  width: 100%;
+  padding: rem(40);
+  border-radius: rem(36);
+  background-color: $back-global;
+  @include flex(center, center, 15);
+  flex-direction: column;
+  transition: all 0.7s;
+  &:hover {
+    box-shadow: $box-shadow-card;
+    background-image: $back-img-card;
+  }
+  &:hover &__svg {
+    background-image: $back-img-svg;
+  }
+  &:hover {
+    svg path {
+      fill: $clr-white;
+    }
+  }
+  &__svg {
+    border: 1px white solid;
+    border-radius: 50%;
+    width: rem(105);
+    height: rem(105);
+    @include flex(center, center, 0);
+    background-color: $back-second;
+    svg {
+      height: rem(45);
+      width: rem(45);
+      display: block;
+    }
+  }
+  &__title {
+    margin-top: rem(6);
+    font-size: rem(30);
+    color: $clr-white;
+    font-weight: 800;
+    letter-spacing: rem(1.5);
+  }
+  &__text {
+    text-align: center;
+    font-size: rem(24);
+    color: $clr-light;
+    letter-spacing: rem(1.5);
+  }
+}

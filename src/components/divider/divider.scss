@@ -1,0 +1,21 @@
+@use "../../sass/" as *;
+
+.divider {
+  color: $clr-green;
+  font-size: rem(21);
+  letter-spacing: rem(1.1);
+  font-weight: 700;
+  position: relative;
+  margin-left: rem(17);
+  margin-bottom: rem(21);
+  position: relative;
+  &::before {
+    content: "";
+    width: rem(16);
+    height: 2px;
+    position: absolute;
+    background-color: $clr-green;
+    top: 50%;
+    transform: translateX(rem(-25));
+  }
+}

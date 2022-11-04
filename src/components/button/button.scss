@@ -1,0 +1,16 @@
+@use "../../sass/" as *;
+
+.btn {
+  button {
+    padding: $padding-btn;
+    border-radius: $border-radius;
+    text-align: center;
+    font-size: rem(19);
+    letter-spacing: rem(1.2);
+    background: $back-btn;
+    &:hover {
+      background: $back-btn-hover;
+    }
+    transition: all 0.6s;
+  }
+}

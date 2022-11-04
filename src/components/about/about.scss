@@ -1,0 +1,61 @@
+@use "../../sass/" as *;
+
+.about {
+  padding-top: rem(150);
+  padding-bottom: rem(200);
+  background-color: $back-second;
+  @include flex(center, space-between, 120);
+  &__card {
+    @include grid(2, 38);
+
+    .marginTop {
+      margin-top: rem(-35);
+    }
+  }
+  &__content {
+    width: 50%;
+    h1 {
+      font-weight: 800;
+      font-size: rem(55);
+      letter-spacing: rem(4.5);
+      margin-bottom: rem(50);
+      color: $clr-white;
+      margin-bottom: rem(-2);
+    }
+    p {
+      font-size: rem(20);
+      color: $clr-light;
+      line-height: 1.5;
+      letter-spacing: rem(1.2);
+      margin-bottom: rem(50);
+    }
+  }
+  @include tablet {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    &__content {
+      width: 100%;
+      margin-bottom: rem(150);
+      font-size: rem(26);
+    }
+  }
+  @include mobile {
+    padding: rem(150) rem(40);
+    &__card {
+      width: 100%;
+      .marginTop {
+        margin-top: rem(0);
+      }
+      @include grid(1, 25);
+      .skills {
+        width: 100%;
+        padding: rem(50) 0;
+      }
+    }
+    &__content {
+      p {
+        font-size: rem(25);
+      }
+    }
+  }
+}

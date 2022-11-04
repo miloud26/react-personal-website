@@ -1,0 +1,114 @@
+@use "../../sass/" as *;
+
+.navbar {
+  margin-bottom: rem(-5);
+  background-color: $back-global;
+  color: $clr-white;
+  @include flex(center, space-between, 10);
+  &__logo {
+    font-size: rem(24);
+  }
+  &__links {
+    transition: all 0.7s;
+    ul {
+      @include flex(center, space-between, 47);
+      li {
+        font-size: rem(22);
+        font-weight: bold;
+        position: relative;
+        letter-spacing: rem(1.7);
+        a {
+          &:hover {
+            &::after {
+              transform: scale(1);
+            }
+          }
+
+          &::after {
+            content: "";
+            width: 100%;
+            height: rem(2.6);
+            background-color: $clr-white;
+            position: absolute;
+            left: 0;
+            bottom: rem(-5);
+            transform: scale(0);
+            transition: all 0.6s;
+          }
+          &.active {
+            letter-spacing: rem(2.1) !important;
+            color: $clr-green;
+            &::after {
+              content: "";
+              width: 100%;
+              height: rem(2.6);
+              background-color: $clr-green;
+              position: absolute;
+              left: 0;
+              bottom: rem(-5);
+              transition: all 0.6s;
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__btn {
+    display: none;
+    .close {
+      width: rem(45);
+      height: rem(45);
+      margin-left: rem(50);
+    }
+
+    z-index: 9999;
+    margin-right: rem(30);
+    svg {
+      width: rem(35);
+      height: rem(35);
+    }
+  }
+
+  @include tablet {
+    &__btn-contact {
+      display: none;
+    }
+    &__btn {
+      display: block;
+    }
+    &__links {
+      opacity: 0;
+      ul {
+        display: none;
+      }
+    }
+    .openNav {
+      @include flex(center, center, 0);
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      position: fixed;
+      background-color: $back-second;
+      top: rem(0);
+      opacity: 1;
+      height: 40vh;
+      left: 0;
+
+      ul {
+        display: block;
+        flex-direction: column;
+
+        li {
+          text-align: center;
+          margin-bottom: rem(25);
+          font-size: rem(40);
+        }
+      }
+    }
+  }
+  @include mobile {
+    padding: rem(30) rem(20);
+  }
+}

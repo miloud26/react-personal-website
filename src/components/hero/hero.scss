@@ -1,0 +1,98 @@
+@use "../../sass/" as *;
+
+.body-hero {
+  text-align: center;
+  background-color: $back-global;
+  color: $clr-white;
+  position: relative;
+  padding: 0;
+  padding-top: rem(60);
+  &__video {
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      background: rgba($color: $back-global, $alpha: 0.84);
+    }
+    width: 100%;
+    height: 100%;
+    video {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &__name {
+      > div {
+        @include flex(center, center, 0);
+      }
+      span {
+        font-size: rem(61);
+        font-weight: 800;
+        letter-spacing: rem(4.5);
+        margin-bottom: rem(6);
+      }
+      h2 {
+        font-size: rem(70);
+        letter-spacing: rem(4.5);
+        margin-bottom: rem(-40);
+        font-weight: 800;
+      }
+      h1 {
+        font-weight: 800;
+        font-size: rem(70);
+        letter-spacing: rem(4.5);
+        margin-bottom: rem(50);
+      }
+      p {
+        padding: 0 18%;
+        font-size: rem(26);
+        color: $clr-light;
+        margin-bottom: rem(70);
+        line-height: 1.5;
+        letter-spacing: rem(1.2);
+      }
+    }
+  }
+  @include tablet {
+    &__content {
+      padding: rem(150) 0;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+
+      &__name {
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+  @include mobile {
+    height: rem(700);
+    &__video {
+      display: none;
+    }
+    &__content {
+      position: relative;
+      padding-bottom: rem(10);
+      padding-top: rem(0);
+      display: block;
+      &__name {
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+}

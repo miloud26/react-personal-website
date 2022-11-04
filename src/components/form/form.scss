@@ -1,0 +1,31 @@
+@use "../../sass/" as *;
+
+.form {
+  width: 100%;
+  @include flex(center, center, 30);
+
+  flex-wrap: wrap;
+  input,
+  textarea {
+    font-size: rem(22);
+    color: #000;
+    background-color: #fff;
+    resize: none;
+    border: 1px solid green;
+    border-radius: rem(11);
+    padding: rem(17);
+  }
+  textarea:focus,
+  input:focus {
+    color: rgb(0, 0, 0);
+  }
+  input {
+    width: 47%;
+    margin-bottom: rem(25);
+  }
+  textarea {
+    width: 100%;
+    height: rem(150);
+    margin-bottom: rem(55);
+  }
+}

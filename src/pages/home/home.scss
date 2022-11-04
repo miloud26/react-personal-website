@@ -1,0 +1,8 @@
+@use "../../sass/" as *;
+
+.allProject {
+  margin-top: rem(-5);
+  padding-bottom: rem(200);
+  background-color: $back-second;
+  @include flex(center, center, 0);
+}

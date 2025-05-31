@@ -22,9 +22,10 @@ const LastComp = () => {
         <div className="last-comp__content__divider"></div>
         <h1>Lets Work Together</h1>
         <p>
-          The technological revolution is changing aspect of our lives, and the
-          fabric of society itself. it's also changing the way we learn and what
-          we learn
+          Let’s work together to bring your ideas to life! With my experience
+          and dedication, I’m ready to create high-quality, efficient, and
+          beautiful front-end solutions tailored just for you. Contact me, and
+          let’s make your project a success!
         </p>
         <NavLink
           to="/contact"

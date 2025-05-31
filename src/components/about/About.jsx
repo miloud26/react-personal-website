@@ -37,16 +37,18 @@ const About = () => {
         <Divider text={"My Skills"} />
         <h1>Why Hire Me For Next Project?</h1>
         <p>
-          The technological revolution is changing aspect of our lives, and the
-          fabric of society itself. it's also changing the way we learn and what
-          we learn. Factual knowledge is less prized when everything you ever
-          need to know can be found on your phone. There's no imperative to be
-          an expert at doing everything when you can.
+          I’m skilled in modern web tech—React, Next.js, Node.js—and I combine
+          clean, responsive design with robust back-end solutions. My quick
+          learning, team spirit, and analytical mindset ensure I deliver
+          high-quality work efficiently.
         </p>
 
         <div className="about__cv">
-          <a href={FileCV} download>
-            <Button text={"Download CV"} />
+          <a
+            href="https://www.linkedin.com/in/boudjellal-miloud/"
+            target="_blank"
+          >
+            <Button text={"LinkedIn"} />
           </a>
         </div>
       </motion.div>

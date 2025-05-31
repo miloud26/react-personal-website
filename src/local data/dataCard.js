@@ -78,8 +78,8 @@ export const dataCard = [
         </g>
       </svg>
     ),
-    title: "Front-End",
-    text: "front end developer , nice website",
+    title: "Languages",
+    text: "JavaScript, TypeScript, HTML, CSS",
   },
   {
     id: 2,
@@ -160,8 +160,8 @@ export const dataCard = [
         </g>
       </svg>
     ),
-    title: "Front-End",
-    text: "front end developer , nice website",
+    title: "Frameworks & Libraries",
+    text: "React, Next.js, Redux Toolkit, React Query, TailwindCSS, Bootstrap, Material UI",
   },
   {
     id: 3,
@@ -242,8 +242,8 @@ export const dataCard = [
         </g>
       </svg>
     ),
-    title: "Front-End",
-    text: "front end developer , nice website",
+    title: "Back-End",
+    text: "Node.js, Express.js, Prisma, MongoDB, Mongoose",
   },
   {
     id: 4,
@@ -324,7 +324,7 @@ export const dataCard = [
         </g>
       </svg>
     ),
-    title: "Front-End",
-    text: "front end developer , nice website",
+    title: "Others",
+    text: "Rest Api, Responsive Design, Media Queries, React-PDF, Chart.js, SCSS",
   },
 ];

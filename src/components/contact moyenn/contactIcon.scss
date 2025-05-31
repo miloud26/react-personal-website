@@ -8,9 +8,6 @@
   position: relative;
   transition: 0.8s;
   margin-bottom: rem(40);
-  &:hover > .icon {
-    background: $back-img-card;
-  }
 
   &:hover svg path {
     fill: $clr-white;
@@ -20,8 +17,8 @@
   }
   .icon {
     transition: 0.8s;
-    width: rem(110);
-    height: rem(110);
+    width: rem(90);
+    height: rem(90);
     border-radius: 50%;
     background-color: $back-global;
 
@@ -30,18 +27,15 @@
   .content {
     position: absolute;
     left: rem(130);
-    h1,
-    p {
-      text-align: left;
-      letter-spacing: rem(2);
-    }
+
     h1 {
       font-size: rem(24);
       margin-bottom: rem(17);
     }
     p {
-      font-size: rem(15);
+      font-size: rem(22);
       margin-bottom: rem(5.5);
+      letter-spacing: rem(4);
     }
   }
   @include tablet {

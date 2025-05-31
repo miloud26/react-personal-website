@@ -36,9 +36,11 @@ const BodyHero = () => {
           <br />
           <h1>Boudjellal</h1>
           <p>
-            Since beginning my journey as a freelance designer nearby 7 years
-            ago, I 've done remote work for agencies, consulted for startup, and
-            collaborated with talented people to create digital products.
+            Front-End Developer with 3 to 4 years of experience, specialized in
+            JavaScript and TypeScript. Expert in React, Redux, React Query,
+            Next.js, and Tailwind CSS. I design modern, high-performance, and
+            maintainable interfaces with a strong focus on user experience.
+            Always seeking continuous improvement and best practices.
           </p>
           <div>
             <NavLink

@@ -29,3 +29,10 @@
     margin-bottom: rem(55);
   }
 }
+@include tablet {
+  .form {
+    input {
+      width: 100%;
+    }
+  }
+}

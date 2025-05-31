@@ -18,11 +18,9 @@ const Contact = () => {
         <Divider text={"Contact Me"} />
         <h1>Get In Touch With Me</h1>
         <p>
-          The technological revolution is changing aspect of our lives, and the
-          fabric of society itself. it's also changing the way we learn and what
-          we learn. Factual knowledge is less prized when everything you ever
-          need to know can be found on your phone. There's no imperative to be
-          an expert at doing everything when you can.
+          Feel free to get in touch with me anytime! Whether you have a project
+          idea, questions, or want to discuss collaboration, I’m here to help.
+          Let’s connect and start building something great together.
         </p>
         <div className="contact__content__btn-icon">
           {contactData.map((item) => {
